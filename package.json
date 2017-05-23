@@ -1,0 +1,13 @@
+{
+  "name": "cryptography",
+  "version": "0.0.1",
+  "dependencies": {
+    "big-integer": "^1.6.22",
+    "express": "^4.15.3",
+    "frozor-logger": "latest"
+  },
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^1.6.8"
+  }
+}

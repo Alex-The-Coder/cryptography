@@ -1,0 +1,29 @@
+.generate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ifGenerated {
+    margin-top: 24px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.buttons button {
+    background: none;
+    color: #2196F3;
+}
+
+.output button {
+    background: none;
+    color: #2196F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

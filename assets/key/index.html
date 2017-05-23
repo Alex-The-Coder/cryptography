@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pub/Priv Keys</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/global/global.css">
+    <link type="text/css" rel="stylesheet" href="/key/key.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://peterolson.github.com/BigInteger.js/BigInteger.min.js"></script>
+    <script src="/key/request.js"></script>
+    <script src="/key/key.js"></script>
+</head>
+<body>
+<div class="content">
+    <div class="main card">
+        <div class="title">Public/Private Keys</div>
+        <div class="body">
+            <div class="generate">
+                <button type="button" id="key-load-button">Generate Keys</button><div id="key-load-icon" style="display: none;"><div class="loading"></div></div>
+            </div>
+
+            <div class="ifGenerated" style="display: none;">
+                <ul class="key">
+                   <li><span class="name">n: </span><span class="val" id="n">1</span></li>
+                    <li><span class="name">d: </span><span class="val" id="d">1</span></li>
+                    <li><span class="name">e: </span><span class="val" id="e">1</span></li>
+                </ul>
+
+                <div class="input">
+                    <textarea placeholder="Text to Encrypt/Decrypt" id="text"></textarea>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" id="encrypt">Encrypt</button>
+                    <button type="button" id="decrypt">Decrypt</button>
+                </div>
+
+                <div class="output">
+                    <textarea placeholder="Output" id="output" readonly></textarea>
+                    <button type="button" id="up"><i class="material-icons">arrow_upward</i> Move Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

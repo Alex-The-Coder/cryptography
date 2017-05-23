@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cipher</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="/global/global.css">
+    <link type="text/css" rel="stylesheet" href="/cipher/cipher.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/cipher/cipher.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="main card">
+            <div class="title">Cesarean Ciphers</div>
+            <div class="body">
+                <div class="input">
+                    <label for="text">Text to Encrypt</label>
+                    <input type="text" name="text" id="text"/>
+                </div>
+                <div class="input">
+                    <label for="shiftCount">Amount to Shift</label>
+                    <input type="number" name="shiftCount" id="shiftCount">
+                </div>
+                <div class="button">
+                    <button type="button" id="encrypt">Encrypt</button>
+                </div>
+                <div class="output">
+                    <label for="output">Output</label>
+                    <input type="text" name="output" id="output" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
